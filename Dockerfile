@@ -17,7 +17,6 @@ COPY --from=build /app/dist /usr/share/nginx/html
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
-Base image
 # FROM node:16-alpine
 
 # # Set the working directory
