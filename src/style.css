@@ -42,7 +42,7 @@
   }
 
   h2 {
-    @apply text-4xl font-semibold text-primary;
+    @apply text-4xl font-semibold text-primary mt-8;
   }
 
   h3 {
@@ -72,7 +72,7 @@
 
 @layer components {
   .card{
-    @apply bg-secondary p-6 h-400;
+    @apply bg-secondary p-6 h-100 mb-4;
   }
   /* 2)Video-pointe: definerer med extend utillity */
 }
