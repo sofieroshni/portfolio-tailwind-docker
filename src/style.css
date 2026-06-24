@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* theme */
+@theme {
+  --color-primary: #38000E;
+  --color-secondary: #D9D9D9;
+  --color-secondary-dark: #212529;
+  --color-dark: #212529;
+  --color-light: #f8f9fa;
+--color:hover-primary: #7f1212;
+
+  --font-sans: InterVariable, sans-serif;
+  --font-sans--font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 16px;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 20px;
+  --text-4xl: 2.25rem;
+  --text-5xl: 40px;
+
+  /* 1) Her er de variabler som jeg anvender nede i min layer-base*/
+  --text-weight-normal: 400;
+  --text-weight-medium: 500;
+  --text-weight-semibold: 600;
+  --text-weight-bold: 700;
+  --text-weight-extrabold: 800;
+}
+
+/* base */
+@layer base {
+
+  body {
+    @apply font-sans text-base text-secondary-dark bg-white;
+  }
+
+  h1 {
+    @apply text-5xl font-bold text-secondary-dark;
+  }
+
+  h2 {
+    @apply text-4xl font-semibold text-primary;
+  }
+
+  h3 {
+    @apply text-3xl font-normal text-secondary-dark;
+  }
+
+  h4 {
+    @apply text-2xl font-medium text-secondary-dark;
+  }
+
+  h5 {
+    @apply text-xl font-medium text-secondary-dark;
+  }
+
+  h6 {
+    @apply text-lg font-medium text-secondary-dark;
+  }
+
+  a {
+    @apply text-white hover:opacity-80;
+  }
+
+  p {
+    @apply text-base leading-relaxed text-secondary-dark;
+  }
+}
+
+@layer components {
+  .card{
+    @apply bg-secondary p-6 h-400;
+  }
+  /* 2)Video-pointe: definerer med extend utillity */
+}
